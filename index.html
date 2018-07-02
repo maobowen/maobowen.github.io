@@ -1,93 +1,265 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Home | 101对双生儿</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css">
-        <link rel="stylesheet" href="https://momentumdash.com/css/style.css?v=20171127">
-        <style>
-        #center .time {
-          font-size: 7em;
-        }
-        </style>
-    </head>
-    <body class="v2">
-        <ul id="background"></ul>
+<html lang="en">
 
-        <div id="widgets">
-            <div id="top-left"></div>
-            <div id="center-above"></div>
-            <div id="center"></div>
-            <div id="center-below"></div>
-            <div id="bottom"></div>
-            <div id="bottom-right">
-                <nav id="tertiary">
-                    <a href="https://momentumdash.com/" target="_blank">Theme Momentum</a>
-                    <a href="https://github.com/maobowen" target="_blank" class="social"><i class="fa fa-github"></i></a>
-                    <a href="https://facebook.com/maobowen" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/maobowen3" target="_blank" class="social"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/bowen-mao" target="_blank" class="social"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://weibo.com/maobowen3" target="_blank" class="social"><i class="fa fa-weibo"></i></a>
-                </nav>
-            </div>
-            <div id="bottom-left"></div>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="101对双生儿's homepage hosted on GitHub Pages.">
+    <meta name="author" content="Bowen Mao">
+
+    <title>Home | 101对双生儿</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">101对双生儿</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Good <span id="period"></span>!</h1>
+        <h3 class="mb-5">
+          <em>Welcome to 101对双生儿's homepage!</em>
+        </h3>
+        <a class="btn btn-light btn-xl" href="/blog"><i class="fab fa-html5"></i>&nbsp;Blog</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about"><i class="far fa-angle-double-down"></i>&nbsp;More</a>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>A computer science student from Shanghai.</h2>
+            <p class="lead mb-5">A fresh graduate from 
+              <a href="https://www.columbia.edu" target="_blank">Columbia University</a> and 
+              <a href="https://www.cityu.edu.hk/" target="_blank">City University of Hong Kong</a>.<br>
+              Now pursuing a master degree at 
+              <a href="https://www.cornell.edu/" target="_blank">Cornell University</a>.</p>
+            <a class="btn btn-dark btn-xl" href="/blog/resume/"><i class="far fa-file-alt"></i>&nbsp;Résumé</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#interests"><i class="far fa-camera-retro"></i>&nbsp;Interests</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio"><i class="far fa-code-branch"></i>&nbsp;Projects</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Handlesbars Templates (Move to external files) -->
-        <script id="message-template" type="text/x-handlebars-template">
-            <h4>{{title}}</h4>
-            <p>
-                <span class="message">{{message}}</span>
-            </p>
-            <a href="" class="hide"><span>✕</span></a>
-        </script>
+    <!-- Interests -->
+    <section class="content-section bg-primary text-white text-center" id="interests">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Interests</h3>
+          <h2 class="mb-5">Things That I am Interested in...</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="interest-icon rounded-circle mx-auto mb-3">
+              <i class="fas fa-code"></i>
+            </span>
+            <h4>
+              <strong>Coding</strong>
+            </h4>
+            <p class="text-faded mb-0">No coding, no life.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="interest-icon rounded-circle mx-auto mb-3">
+              <i class="fas fa-walking"></i>
+            </span>
+            <h4>
+              <strong>Hiking</strong>
+            </h4>
+            <p class="text-faded mb-0">Not a great hiker but love nature.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="interest-icon rounded-circle mx-auto mb-3">
+              <i class="fas fa-music"></i>
+            </span>
+            <h4>
+              <strong>Cantopop</strong>
+            </h4>
+            <p class="text-faded mb-0">係㗎，我鍾意聽廣東歌架。</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="interest-icon rounded-circle mx-auto mb-3">
+              <i class="fas fa-tv"></i>
+            </span>
+            <h4>
+              <strong>Animes</strong>
+            </h4>
+            <p class="text-faded mb-0">Chat with me if you also like!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script id="background-template" type="text/x-handlebars-template">
-            <li style="background-image: url('backgrounds/{{filename}}')"></li>
-        </script>
+    <!-- Callout -->
+    <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-5 mb-5">不以物喜 不以己悲</h2>
+      </div>
+    </section>
 
-        <script id="background-info-template" type="text/x-handlebars-template">
-            <span class="title">{{title}}</span>
-            {{#if sourceUrl}}
-                <span class="source"><a href="{{sourceUrl}}">{{source}}</a></span>
-            {{else}}
-                <span class="source">{{source}}</span>
-            {{/if}}
-       </script>
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://less0n.bmao.tech/" target="_blank">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Less0n</h2>
+                  <p class="mb-0">The next generation of course and professor ratings system.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/project-less0n.png" alt="Less0n">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="/PixelPlusPlus/" target="_blank">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Pixel++</h2>
+                  <p class="mb-0">A programming language for efficient manipulation of images.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/project-pixel.png" alt="Pixel++">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://youtu.be/Y4kvIFqm15A" target="_blank">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Color Monster</h2>
+                  <p class="mb-0">An Android game for training the ability of concentration of ADHD children.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/project-color-monster.jpg" alt="Color Monster">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://py.bmao.tech/anime/" target="_blank">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>an·i·me</h2>
+                  <p class="mb-0">A Django-based anime website.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/project-anime.png" alt="an·i·me">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script id="centerclock-template" type="text/x-handlebars-template">
-            <h1 class="time">{{time}}</h1>
-            <span class="format">AM</span>
-        </script>
+    <!-- More Portfolio -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">More Projects...</h2>
+        <a href="https://py.bmao.tech/noteshare/" class="btn btn-xl btn-light" target="_blank"><i class="fas fa-book"></i>&nbsp;NoteShare</a>
+      </div>
+    </section>
 
-        <script id="greeting-template" type="text/x-handlebars-template">
-          <h2 class="greeting">Good <span class="period">{{period}}</span>.</h2>
-        </script>
+    <!-- Footer -->
+    <footer class="footer text-center" id="contact">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://github.com/maobowen" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://gitlab.com/maobowen" target="_blank">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://facebook.com/maobowen" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://twitter.com/maobowen3" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/bowen-mao" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://m.weibo.cn/u/1849047041" target="_blank">
+              <i class="fab fa-weibo"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">&copy; Bowen Mao 2017-<span id="current-year"></span>. All Rights Reserved.</p>
+        <p class="text-muted small mb-0">Theme <a target="_blank" href="https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio">Stylish Portfolio</a> is designed by <a target="_blank" href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
+        <p class="text-muted small mb-0">Images:  
+          <a target="_blank" href="https://www.flickr.com/photos/75487768@N04/32574326684/">Hong Kong</a> by barnyz and 
+          <a target="_blank" href="https://www.flickr.com/photos/83347646@N07/15951515112/">View from Lion Rock</a> by Lok Narayan Joshi.</p>
+      </div>
+    </footer>
 
-        
-        <script id="install-template" type="text/x-handlebars-template">
-            <p class="features">101对双生儿</p>
-            <p class="call-to-action" style="display: block;">
-                <a href="https://bmao.tech/blog" class="button button-load font-medium"><i class="fa fa-html5"></i> Blog</a>
-            </p>
-        </script>
-        
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-        <!-- Libraries -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.6/backbone.localStorage-min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
 
-        <!-- App -->
-        <script src="https://momentumdash.com/app/app.js"></script>
-        <script src="app/background.js"></script>
-        <script src="https://momentumdash.com/app/main.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-    </body>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+  </body>
+
 </html>
