@@ -1,0 +1,356 @@
+:root {
+  --black-rgb: 0, 0, 0;
+  --gray-800-rgb: 52, 58, 64;
+  --primary: #1d809f;
+  --primary-darken: #155d74;
+  --secondary: #ecb807;
+  --secondary-darken: #d39f00;
+  --white-rgb: 255, 255, 255;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.text-faded {
+  color: rgba(var(--white-rgb), .7);
+}
+
+/* Custom Button Size */
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+  margin: auto 1.25rem;
+}
+
+/* Bootstrap overrides */
+a {
+  color: var(--primary);
+}
+
+a:hover, a:focus, a:active {
+  color: var(--primary-darken);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(var(--black-rgb), .1);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.btn-dark {
+  color: rgb(var(--white-rgb)) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: rgb(var(--white-rgb)) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--primary-darken) !important;
+  border-color: var(--primary-darken) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+/* Navigation */
+.menu-toggle {
+  background: rgba(var(--gray-800-rgb), .5);
+  color: rgb(var(--white-rgb));
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  right: 15px;
+  text-align: center;
+  top: 15px;
+  width: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: rgb(var(--white-rgb));
+}
+
+.menu-toggle:hover {
+  background: rgb(var(--gray-800-rgb));
+}
+
+#sidebar-wrapper {
+  background: var(--primary);
+  border-left: 1px solid rgba(var(--white-rgb), .1);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  transition: all .4s ease 0s;
+  transform: translateX(250px);
+  width: 250px;
+  z-index: 2;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  color: rgb(var(--white-rgb));
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  background: rgba(var(--white-rgb), .2);
+  color: rgb(var(--white-rgb));
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  background: rgba(var(--gray-800-rgb), .1);
+  font-size: 1.2rem;
+  height: 80px;
+  line-height: 50px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: rgb(var(--white-rgb));
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  background: none;
+  color: rgb(var(--white-rgb));
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  transition: all .4s ease 0s;
+  width: 250px;
+}
+
+/* Content Section */
+.content-section {
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Header */
+.masthead {
+  background: linear-gradient(90deg, rgba(var(--white-rgb), .4) 0%, rgba(var(--white-rgb), .4) 100%), url('../img/central-hk.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+  height: auto;
+  min-height: 30rem;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+  position: relative;
+  width: 100%;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Interests */
+.interest-icon {
+  background-color: rgb(var(--white-rgb));
+  box-shadow: 0 3px 3px 0 rgba(var(--black-rgb), .1);
+  color: var(--primary);
+  display: block;
+  font-size: 2.25rem;
+  height: 7rem;
+  line-height: 7.5rem;
+  width: 7rem;
+}
+
+.interest-description a, .interest-description a:hover {
+  color: rgba(var(--white-rgb), .7);
+}
+
+/* Callout */
+.callout {
+  background: linear-gradient(90deg, rgba(var(--white-rgb), .4) 0%, rgba(var(--white-rgb), .4) 100%), url('../img/lion-rock-hk.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15rem 0;
+}
+
+.callout h3 {
+  display: block;
+  color: var(--secondary-darken);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.callout h2 {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 30rem;
+}
+
+/* Portfolio */
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, .2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: rgb(var(--white-rgb));
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 1.5rem;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.portfolio-item img {
+  opacity: .6;
+}
+
+/* Footer */
+footer.footer {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+footer.footer .social-link {
+  background-color: var(--primary);
+  box-shadow: 0 3px 3px 0 rgba(var(--black-rgb), .1);
+  display: block;
+  font-size: 1.5rem;
+  height: 4rem;
+  line-height: 4.3rem;
+  margin-bottom: .5rem;
+  transition: background-color .15s ease-in-out;
+  width: 4rem;
+}
+
+footer.footer .social-link:hover {
+  background-color: var(--primary-darken);
+  text-decoration: none;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  background: rgba(var(--gray-800-rgb), .5);
+  bottom: 15px;
+  color: rgb(var(--white-rgb));
+  display: none;
+  height: 50px;
+  line-height: 45px;
+  position: fixed;
+  right: 15px;
+  text-align: center;
+  width: 50px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: rgb(var(--white-rgb));
+}
+
+.scroll-to-top:hover {
+  background: rgb(var(--gray-800-rgb));
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+
+  .portfolio-item {
+    margin: 0;
+    max-width: none;
+  }
+
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path .25s ease-out, background-color .7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+
+  .portfolio-item .caption .caption-content {
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    transition: opacity .25s;
+  }
+
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path .25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+
+  .portfolio-item:hover img {
+    clip-path: inset(2rem);
+  }
+
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, .9);
+    clip-path: inset(2rem);
+  }
+}
