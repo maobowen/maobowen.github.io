@@ -36,6 +36,14 @@ a:hover, a:focus, a:active {
   color: var(--primary-darken);
 }
 
+a:not([class]) {
+  text-decoration: none;
+}
+
+a:not([class]):hover {
+  text-decoration: underline;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
